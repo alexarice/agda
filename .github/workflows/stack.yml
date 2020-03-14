@@ -59,7 +59,7 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        ghc-ver: [8.8.2]
+        ghc-ver: [8.8.3]
         icu-ver: [58.2-3]
     env:
       ARGS: "--stack-yaml stack-${{ matrix.ghc-ver }}.yaml --no-terminal --fast"
